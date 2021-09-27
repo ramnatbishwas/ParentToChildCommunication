@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Parent component">
+        <!-- pass data from parent to child decorating the property message in child component with @api so
+        that the parent component can have access to it and pass the data to the child-->
+        <p>This will also get displayed from parent component</p>
+        <!-- Parent to child communication using primitive types -->
+        <c-child-component 
+            message ='Send me to child component property named message'>
+        </c-child-component>
+      </lightning-card>
+    
+</template>
